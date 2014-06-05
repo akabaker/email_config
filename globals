@@ -1,0 +1,14 @@
+MYSQL_ROOT_PASSWORD=sandwiches
+VMAIL_USER=vmail
+VMAIL_GROUP=vmail
+HOSTNAME=localhost
+PACKAGES=(postfix dovecot mysql-server dovecot-mysql)
+MYSQL_ANSWER_FILE=mysql_secure_install_answer.txt
+MY_CNF=my.cnf
+CREATE_DATABASES_SQL=create_databases.sql
+POSTFIX_CF=(
+    mysql-virtual_domains.cf
+    mysql-virtual_forwardings.cf
+    mysql-virtual_mailboxes.cf
+    mysql-virtual_email2email.cf
+)
